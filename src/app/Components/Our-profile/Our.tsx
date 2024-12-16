@@ -9,6 +9,7 @@ import img9 from "../../../../public/image/image4.png"
 import imge10 from "../../../../public/item/Hamburger.png"
 import imge11 from "../../../../public/item/Vector.png"
 
+
 const Our = () => {
   
   
@@ -143,6 +144,8 @@ const Our = () => {
           </div>
         </div>
       </div>
+
+     
     </section>
   
 

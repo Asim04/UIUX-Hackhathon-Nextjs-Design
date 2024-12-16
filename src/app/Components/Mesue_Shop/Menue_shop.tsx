@@ -7,7 +7,9 @@ import img1 from "../../../../public/shopitem/Rectangle 8874.png"
 
 const Menue_shop = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 py-10 max-w-6xl mx-auto">
+    
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 py-10 max-w-6xl mx-auto mb-32">
+      
       <div >
         <Image
           src={img1}
@@ -47,17 +49,30 @@ const Menue_shop = () => {
             },
           ].map((item, index) => (
             <div key={index} className="flex justify-between items-start">
+
               <div>
-                <h4 className="text-[30px] font-semibold text-gray-700 leading-[20px]">{item.title}</h4>
-                <p className="text-sm text-slate-300">{item.description}</p>
-                <p className="text-sm text-gray-400">{item.calories}</p>
+                
+                <div className="wid-[32px] h-[28px]">
+                <h4 className="text-2xl font-bold text-white hover:text-primaryColor">{item.title}</h4>
+                </div>
+
+                <div className="w-[368px] h-[24px] mt-[7px]">
+                <p className="text-[13px] font-normal text-white">{item.description}</p>
+                </div>
+
+                <div className="w[63px] h-[24px]">
+                <p className="text-base textwhite font-normal mt-[8px]">{item.calories}</p>
+                </div>
+
               </div>
-              <span className="text-lg font-bold text-orange-500">{item.price}</span>
+
+              <span className="text-lg font-bold text-orange-500 mb-[40px]">{item.price}</span>
             </div>
           ))}
         </div>
       </div>
     </div>
+   
   );
 };
 

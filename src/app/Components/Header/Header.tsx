@@ -1,6 +1,9 @@
 
+
 import Link from 'next/link'
 import React from 'react'
+import { CiShoppingBasket } from 'react-icons/ci'
+
 
 const Header = () => {
   return (
@@ -9,7 +12,7 @@ const Header = () => {
       <h1 className=" font-Helvetica text-2xl font-bold text-center ">
         <span className='font-Helvetica text-primaryColor text-2xl font-bold '>Food</span>tuck</h1>
       <nav className="bg-black text-white p-4 flex justify-evenly items-center">
-      <ul className="hidden md:flex space-x-6">
+      <ul className="hidden md:flex space-x-6 ml-4">
         <Link href='/'><li>Home</li></Link>
         <Link href='/menu'><li>Menu</li></Link>
         <Link href='/blog'><li>Blog</li></Link>
@@ -17,7 +20,7 @@ const Header = () => {
         <Link href='/shop'><li>Shop</li></Link>
         <Link href='/contact'><li>Contact</li></Link>
       </ul>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 ">
         <input 
           type="text"
           placeholder="Search..."
@@ -26,6 +29,9 @@ const Header = () => {
         <button className="bg-yellow-500 mt-[33px] px-4 py-2 rounded-[27px] text-white">
           Search
         </button>
+        <CiShoppingBasket className='text-xl mt-9 hover:text-primaryColor'/>
+        {/* <ShoppingCart className='hover:text-primaryColor' /> */}
+
       </div>
     </nav>
     </div>

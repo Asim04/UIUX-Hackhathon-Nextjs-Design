@@ -11,7 +11,7 @@ const Menu_section = () => {
 
          
      <section className="bg-black text-white py-16 px-6">
-  <div className="container mx-auto text-center">
+  <main className="container mx-auto text-center">
     <h2 className="text-4xl font-bold mb-8">
       Choose & Pick <span className="text-orange-500">From Our Menu</span>
     </h2>
@@ -162,7 +162,7 @@ const Menu_section = () => {
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </section>
 
 

@@ -6,6 +6,10 @@ import MainCourse from '../Components/Mesue_Shop/MainCouse'
 
 import React from 'react';
 import Mobilebar from '../Components/Mobilebar/Mobilebar';
+import Desert from '../Components/Mesue_Shop/Desert';
+import Drink from '../Components/Mesue_Shop/Drink';
+import Logo from '../Components/Logo.tsx/Logo';
+import Footer from '../Components/Footer/Footer';
 
 const HeroComponent = () => {
   return (
@@ -58,7 +62,8 @@ const HeroComponent = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[500px] bg-cover bg-center" style={{ backgroundImage: "url('/path-to-your-image.jpg')" }}>
+      <div className="relative w-full h-[500px] bg-cover bg-center"> 
+      {/* style={{ backgroundImage: "url('/path-to-your-image.jpg')" }}> */}
 
       <Image
           src={imgb}
@@ -87,8 +92,14 @@ const HeroComponent = () => {
          {/* Other Components */}
             
            
-            <Menue_shop />
+            <Menue_shop  />
             <MainCourse />
+            <Desert />
+            <Drink />
+            <Logo />
+
+            <Footer />
+
     </div>
   );
 };
