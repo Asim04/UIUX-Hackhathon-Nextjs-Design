@@ -7,8 +7,8 @@ const products = [
   { id: 2, name: "Chocolate Muffin", category: "Dessert", price: 4.50, image: "/image/imgitem3.png" },
   { id: 3, name: "Burger", category: "Burger", price: 6.00, image: "/shopitem/Rectangle 8874.png" },
   { id: 4, name: "Country Burger", category: "Burger", price: 5.50, image: "/image/imgitme4.png" },
-  { id: 5, name: "Country Burger", category: "Burger", price: 6.50, image: "/shop/Mask%20Group%20(2).png" },
-  { id: 6, name: "Orange", category: "Drink", price: 6.50, image: "/shop/Mask Group (3).png" },
+  { id: 5, name: "Country Burger", category: "Burger", price: 6.50, image: "/Shop/Mask%20Group%20(2).png" },
+  { id: 6, name: "Orange", category: "Drink", price: 6.50, image: "/Shop/Mask Group (3).png" },
   // Add more products as needed
 ];
 
