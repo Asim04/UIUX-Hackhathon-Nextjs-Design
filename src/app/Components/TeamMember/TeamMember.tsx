@@ -3,10 +3,11 @@ import img1 from "../../../../public/Team/Mark Henry (1).png"
 import img2 from "../../../../public/Team/Mark Henry (2).png"
 import img3 from "../../../../public/Team/Mark Henry (3).png"
 import img4 from "../../../../public/Team//Mark Henry (4).png"
-import bg from "../../../../public/Image/Bg (3).png"
+import bg from "../../../../public/image/Bg (3).png"
 
 const OurTeam = () => {
   return (
+    
     <div className="container mx-auto" >
 
         <div className= " container mx-auto w-full relative ">
