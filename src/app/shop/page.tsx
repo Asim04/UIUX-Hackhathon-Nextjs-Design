@@ -1,4 +1,4 @@
-"use client"
+
 import React from 'react';
 import ProductListing from '../Components/Mesue_Shop/Products';
 import Navbar from '../Components/Header/Navbar_singup';

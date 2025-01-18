@@ -1,28 +1,34 @@
+
 import Image from 'next/image';
-import React, { useState } from 'react';
 
-// Example products data
-const products = [
-  { id: 1, name: "Fresh Lime", category: "Drink", price: 5.00, image: "/shopitem/unsplash_-GFCYhoRe48 (1).png" },
-  { id: 2, name: "Chocolate Muffin", category: "Dessert", price: 4.50, image: "/image/imgitem3.png" },
-  { id: 3, name: "Burger", category: "Burger", price: 6.00, image: "/shopitem/Rectangle 8874.png" },
-  { id: 4, name: "Country Burger", category: "Burger", price: 5.50, image: "/image/imgitme4.png" },
-  { id: 5, name: "Country Burger", category: "Burger", price: 6.50, image: "/Shop/Mask%20Group%20(2).png" },
-  { id: 6, name: "Orange", category: "Drink", price: 6.50, image: "/Shop/Mask Group (3).png" },
-  // Add more products as needed
-];
+import { getAllPost } from '../../../sanity/lib/data';
+import { TMenuItem  } from '../../../sanity/lib/data';
 
-const ProductListing = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 6; // Number of products per page
+// // Example products data
+// const products = [
+//   { id: 1, name: "Fresh Lime", category: "Drink", price: 5.00, image: "/shopitem/unsplash_-GFCYhoRe48 (1).png" },
+//   { id: 2, name: "Chocolate Muffin", category: "Dessert", price: 4.50, image: "/image/imgitem3.png" },
+//   { id: 3, name: "Burger", category: "Burger", price: 6.00, image: "/shopitem/Rectangle 8874.png" },
+//   { id: 4, name: "Country Burger", category: "Burger", price: 5.50, image: "/image/imgitme4.png" },
+//   { id: 5, name: "Country Burger", category: "Burger", price: 6.50, image: "/Shop/Mask%20Group%20(2).png" },
+//   { id: 6, name: "Orange", category: "Drink", price: 6.50, image: "/Shop/Mask Group (3).png" },
+//   // Add more products as needed
+// ];
 
-  const handleNextPage = () => setCurrentPage(currentPage + 1);
-  const handlePrevPage = () => setCurrentPage(currentPage - 1);
+const ProductListing = async () => {
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const productsPerPage = 6; // Number of products per page
 
-  // Pagination logic
-  const indexOfLastProduct = currentPage * productsPerPage;
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  // const handleNextPage = () => setCurrentPage(currentPage + 1);
+  // const handlePrevPage = () => setCurrentPage(currentPage - 1);
+
+  // // Pagination logic
+  // const indexOfLastProduct = currentPage * productsPerPage;
+  // const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  // const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  const food: TMenuItem[] = await getAllPost(); // Fetch products from Sanity and sotre in food variable
+  console.log(food);
 
   return (
     <div className="container mx-auto flex p-4">
@@ -58,23 +64,23 @@ const ProductListing = () => {
       {/* Products Grid */}
       <div className="w-3/4 p-4">
         <div className="grid grid-cols-3 gap-4">
-          {currentProducts.map(product => (
-            <div key={product.id} className="border w-[230px]  rounded-md ">
+          {food.map(product => (
+            <div key={product._id} className="border w-[230px]  rounded-md ">
               <Image
               width={100} 
               height={100}
-              src={product.image} 
+              src={product.imageUrl} 
               alt={product.name} 
               className="w-full h-64 object-cover rounded-md mb-4" />
               <h3 className="text-lg font-bold text-[#ffff] text-center">{product.name}</h3>
               <p className="text-gray-500 text-center">{product.category}</p>
-              <p className="text-lg font-semibold text-primaryColor text-center">${product.price.toFixed(2)}</p>
+              <p className="text-lg font-semibold text-primaryColor text-center">${product.price}</p>
             </div>
           ))}
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center mt-6">
+        {/* <div className="flex justify-center mt-6">
           <button 
             onClick={handlePrevPage} 
             disabled={currentPage === 1} 
@@ -89,7 +95,7 @@ const ProductListing = () => {
           >
             &gt;
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
