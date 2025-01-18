@@ -8,6 +8,8 @@ import Footer from '../Components/Footer/Footer'
 import Header from '../Components/Header/Header'
 import Navbar from '../Components/Header/Navbar_singup'
 import Common from '../Components/Hero/Common'
+import ProductCard from '../Components/ProductCard/ProductCard'
+import { productData } from '../../../typescript/productCard'
 
 const page = () => {
   return (
@@ -41,6 +43,14 @@ const page = () => {
         {/* <Shop_Details /> */}
 
         <Practise />
+
+        <ProductCard  {...productData}/>
+
+        {/* <ProductCard name={''} description={''} price={''} rating={''} reviews={0} images={[]} category={''} tags={[]} socialMediaLinks={{
+        facebook: '',
+        twitter: '',
+        instagram: ''
+      }} /> */}
 
         <Silimar />
 

@@ -11,7 +11,7 @@ const About = () => {
         <div className=" flex container mx-auto">
             
             {/* Images */}
-            <div className="lg:w-1/2 mt-8 lg:mt-0 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="lg:w-1/2 mt-8 lg:mt-0 grid grid-cols-1 md:grid-cols- gap-6">
               <div className="w-[669px] h-[734px] mt-6 flex items-center gap-3 md:flex-col  ">
                 <div className="container mx-auto w-[698px] h-[714px] relative flex items-center ">
                 
@@ -24,13 +24,13 @@ const About = () => {
                   className="rounded-lg shadow-lg absolute z-10   "
                 />
            
-              
+                <div className="flex md:flex-col">
                 <Image
                   src={img3}
                   width={190}
                   height={271}
                   alt="Cooking"
-                  className="rounded-lg shadow-lg absolute z-20 bottom-[90px] right-[200px]  "
+                  className="rounded-lg shadow-lg absolute z-20 lg:bottom-[90px] lg:right-[200px] md:bottom-[50px] md:right-[50px]  "
                 />
              
               
@@ -39,8 +39,10 @@ const About = () => {
                   width={190}
                   height={382}
                   alt="Delicious Food"
-                  className="rounded-lg shadow-lg absolute z-0  top-[150px] left-[310px] "
+                  className="rounded-lg shadow-lg absolute z-0  lg:top-[150px] lg:left-[310px] md:top-[50px] md:left-[50px]  "
                 />
+                </div>
+
                 </div>
                 
               

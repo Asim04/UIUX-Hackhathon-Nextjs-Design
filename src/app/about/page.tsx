@@ -54,7 +54,7 @@ const page = () => {
           width={1920}
           height={410}
           alt="Hero Background"
-          className="w-full h-full object-cover"  // **Ensures full coverage and proper scaling of image**
+          className="w-full h-full object-cover"  
           />
       
 

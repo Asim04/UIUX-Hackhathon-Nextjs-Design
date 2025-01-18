@@ -30,7 +30,8 @@ const OurCheef = () => {
                 height={391}
                alt="Cupcake"
                className=" rounded-md" />
-              <h4 className="text-xl font-bold mt-4 text-black ">Cupcakes</h4>
+              <h4 className="text-xl font-bold mt-4 text-white ">Tahmina Rumi</h4>
+              <p>cheef</p>
             </div>
 
             <div className=" p-4 rounded shadow-md text-center">
@@ -40,7 +41,9 @@ const OurCheef = () => {
               width={312}
               alt="Salad" 
               className=" rounded-md" />
-              <h4 className="text-xl font-bold mt-4">Salads</h4>
+              <h4 className="text-xl font-bold mt-4">M.Mohammad
+              <p>cheef</p>
+              </h4>
             </div>
 
             <div className=" p-4 rounded shadow-md text-center">
@@ -50,8 +53,10 @@ const OurCheef = () => {
               height={391}
               alt="Pasta" 
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Pasta</h4>
+              <h4 className="text-lg font-bold mt-4">Jorina Begum</h4>
+              <p>cheef</p>
             </div>
+
 
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -69,7 +74,8 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">Bisnu devgon</h4>
+              <p>cheef</p>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -78,7 +84,8 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">Motin Molladsf</h4>
+              <p>cheef</p>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -87,7 +94,8 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">Mahmud kholil</h4>
+              <p>cheef</p>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -96,7 +104,8 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">Ataur Rahman</h4>
+              <p>cheef</p>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -105,7 +114,9 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">William Rumi
+              <p>cheef</p>
+              </h4>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -114,7 +125,9 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">Monalisa holly
+              <p>cheef</p>
+              </h4>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -123,7 +136,9 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">William Rumi
+              <p>cheef</p>
+              </h4>
             </div>
             <div className=" p-4 rounded shadow-md text-center">
               <Image
@@ -132,7 +147,8 @@ const OurCheef = () => {
               height={391}
               alt="Juice"
               className="w-full h-50 object-cover rounded-md" />
-              <h4 className="text-lg font-bold mt-4">Fresh Juices</h4>
+              <h4 className="text-lg font-bold mt-4">Motin Molladsf</h4>
+              <p>cheef</p>
             </div>
 
 
