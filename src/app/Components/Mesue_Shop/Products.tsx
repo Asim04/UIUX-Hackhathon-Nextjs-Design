@@ -27,7 +27,8 @@ const ProductListing = async () => {
   // const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   // const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
 
-  const food: TMenuItem[] = await getAllPost(); // Fetch products from Sanity and sotre in food variable
+  const response = await getAllPost(); // Fetch products from Sanity
+  const food: TMenuItem[] = Array.isArray(response) ? response : response.data || [];
   console.log(food);
 
   return (

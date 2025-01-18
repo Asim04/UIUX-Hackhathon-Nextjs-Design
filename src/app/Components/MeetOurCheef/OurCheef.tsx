@@ -11,8 +11,15 @@ import img9 from "../../../../public/MeetOurChheef/chef9.png"
 import img10 from "../../../../public/MeetOurChheef/Chef Card 10.png"
 import img11 from "../../../../public/MeetOurChheef/chef11.png"
 import img12 from "../../../../public/MeetOurChheef/che12.png"
+import { getAllPost } from "../../../sanity/lib/data";
+import { TChefItem } from "../../../sanity/lib/data";
 
-const OurCheef = () => {
+const OurCheef = async () => {
+
+  const response = await getAllPost(); // Fetch products from Sanity
+  const chef: TChefItem[] = Array.isArray(response) ? response : response.dataChef || [];
+  console.log(chef);
+  
   return (
     <div>
 
@@ -170,3 +177,4 @@ const OurCheef = () => {
 }
 
 export default OurCheef
+
