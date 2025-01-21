@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Image from 'next/image'
 import imgb from "../../../public/shopitem/unsplash_-GFCYhoRe48 (1).png"
 import OurCheef from '../Components/MeetOurCheef/OurCheef'
 import Mobilebar from '../Components/Mobilebar/Mobilebar'
 
-const page = () => {
+const page = async () => {
   return (
     
 
@@ -83,8 +83,10 @@ const page = () => {
           </p>
         </div>
       </div>
-
-      <OurCheef />
+      
+      <Suspense fallback={<div>Loading...</div>}>
+        <OurCheef />
+      </Suspense>
       
     </div>
   )

@@ -7,14 +7,14 @@ import Common from '../Components/Hero/Common';
 
 
 
-const ShopPage = () => {
+const ShopPage = async () => {
   return (
     <div>
       <Navbar />
       {/* <Common />  */}
       <h1 className="text-4xl font-bold text-center p-4">Our Shop</h1>
+      {/* @ts-expect-error Async Server Component */}
       <ProductListing />
-
       <Footer />
     </div>
   );
